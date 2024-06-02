@@ -246,7 +246,7 @@ img {
   justify-self: center;
 }
 .about__img img {
-  width: 400px;
+  width: 500px;
   border-radius: 0.5rem;
 }
 
@@ -461,6 +461,9 @@ img {
   .about__img img {
     width: 300px;
   }
+  .skill__images img {
+    width: 500px;
+  }
   .skills__container {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
@@ -496,7 +499,24 @@ img {
 }
 
 .slideshow-container {
-  max-width: 1000px;
   position: relative;
   margin: auto;
+}
+
+.mySlides {
+  display: none;
+  text-align: center;
+}
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* This centers the content vertically */
+}
+
+img {
+  width: auto;
+  height: auto;
+  max-width: 100%; /* This ensures the image doesn't exceed the slide width */
+  max-height: 100%; /* This ensures the image doesn't exceed the slide height */
 }

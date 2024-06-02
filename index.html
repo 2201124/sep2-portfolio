@@ -1,212 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <title>Nicholas Lian Portfolio</title>
+</head>
+<body>
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Nicholas Lian</a>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+    <main class="l-main">
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hello!<br>I am <span class="home__title-color">Nicholas Lian</span><br> Robotics Engineer</h1>
+                <a href="#" class="button">Contact</a>
+            </div>
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/liannicholas/" target="_blank" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/2201124" target="_blank" class="home__social-icon"><i class='bx bxl-github'></i></a>
+            </div>
+            <div class="home__img">
+                <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <mask id="mask0" mask-type="alpha">
+                        <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                    </mask>
+                    <g mask="url(#mask0)">
+                        <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        <image class="home__blob-img" x="40" y="60" href="assets/img/perfil.png"/>
+                    </g>
+                </svg>
+            </div>
+        </section>
 
-        <link rel="stylesheet" href="assets/css/styles.css">
-
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
-        <title>Nicholas Lian Portfolio</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
+        <section class="about section" id="about">
+            <h2 class="section-title">About</h2>
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/about.jpg" alt="">
+                </div>
                 <div>
-                    <a href="#" class="nav__logo">Nicholas Lian</a>
+                    <h2 class="about__subtitle">I am Nicholas Lian</h2>
+                    <p class="about__text">Hello! I am an aspiring robotics engineer with a deep-rooted passion for programming, computer-aided design, and fabrication. I believe in pushing the boundaries of what is possible in the field of engineering, and I invite you to explore my passions and latest projects on this website.</p>
                 </div>
+            </div>
+        </section>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <!-- <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li> -->
-                        <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills__container bd-grid">
+                <div>
+                    <h2 class="skills__subtitle">CAD Modelling</h2>
+                    <p class="skills__text">I have experience working with several industry-standard CAD design software, including Autodesk Inventor, Autocad, and Solidworks. I am proficient in utilizing these tools to create precise and detailed designs, and I am always eager to further develop my skills and stay up-to-date with the latest advancements in the field.</p>
                 </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hello!<br>I am <span class="home__title-color">Nicholas Lian</span><br> Robotics Engineer</h1>
-
-                    <a href="#" class="button">Contact</a>
-                </div>
-
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/liannicholas/"target="_blank" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://github.com/2201124" target="_blank"class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
-
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="40" y="60" href="assets/img/perfil.png"/>
-                        </g>
-                    </svg>
-                </div>
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/about.jpg" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">I am Nicholas Lian</h2>
-                        <p class="about__text">Hello! I am an aspiring robotics engineer with a deep-rooted passion for programming, computer-aided design, and fabrication. I believe in pushing the boundaries of what is possible in the field of engineering, and I invite you to explore my passions and latest projects on this website.</p>           
-                    </div>                                   
-                </div>
-            </section>
-
-            <!--===== SKILLS -->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">CAD Modelling</h2>
-                        <p class="skills__text">I have experience working with several industry-standard CAD design software, including Autodesk Inventor, Autocad, and Solidworks. I am proficient in utilizing these tools to create precise and detailed designs, 
-                            and I am always eager to further develop my skills and stay up-to-date with the latest advancements in the field.</p>
-                    </div>
-
-                    <div class="about__img">
-                        <div class="slideshow-container">                    
-                            <div class="mySlides fade">
-                            <img src="assets/img/CAD1.png">
-                            <div class="text">Claw Gripper & AGV assembly on Inventor </div>
-                            </div>
-                            <div class="mySlides fade">
-                            <img src="assets/img/CAD2.png">
-                            <div class="text">Simple Sumo Robot Design assembly on Solidworks</div>
-
-                            </div>
-                            <div class="mySlides fade">
-                            <img src="assets/img/CAD3.png">
+                <div class="skill__images">
+                    <div class="slideshow-container cad-slideshow">
+                        <div class="mySlides cad fade">
+                            <img src="assets/img/CAD1.png" style="display: block; margin-left: auto; margin-right: auto;">
+                            <div class="text">Claw Gripper & AGV assembly on Inventor</div>
+                        </div>
+                        <div class="mySlides cad fade">
+                            <img src="assets/img/CAD2.png" style="display: block; margin-left: auto; margin-right: auto;">
+                            <div class="text">Sumo Robot Design assembly on Solidworks</div>
+                        </div>
+                        <div class="mySlides cad fade">
+                            <img src="assets/img/CAD3.png" style="display: block; margin-left: auto; margin-right: auto;">
                             <div class="text">Torch Holder Assembly on Solidworks</div>
-                            </div>
                         </div>
                     </div>
+                </div>
+                <br>
+                <div style="text-align:center" class="dots cad-dots">
+                    <span class="dot cad-dot"></span> 
+                    <span class="dot cad-dot"></span> 
+                    <span class="dot cad-dot"></span> 
+                </div>
+
+                <div>
+                    <h2 class="skills__subtitle">Dashboarding</h2>
+                    <p class="skills__text">
+                        I have experience with Thingworx, an IoT platform that enables users to create and deploy applications quickly. 
                         <br>
-                        <div style="text-align:center">
-                        <span class="dot"></span> 
-                        <span class="dot"></span> 
-                        <span class="dot"></span> 
+                        <br>With Thingworx, I designed proof-of-concept dashboards for manufacturing and transport industries. These dashboards are invaluable for fleet monitoring and data-driven decisions. 
+                        <br>
+                        <br>
+                        By leveraging Thingworx, I developed dynamic dashboards that offer strategic insights. These visualizations provide critical information, such as vehicle locations, performance metrics, and manufacturing processes, at a glance.
+                        <br>
+                        <br>
+                        My work demonstrates an ability to utilize cutting-edge technology, presenting complex data simply to enhance performance and efficiency.</p>
+                </div>
+                <div class="skill__images">
+                    <div class="slideshow-container dashboard-slideshow">
+                        <div class="mySlides dashboard fade">
+                            <img src="assets/img/Dashboard1.png" style="display: block; margin-left: auto; margin-right: auto;">
+                            <div class="text">Operator Execution Dashboard designed for Manufacturing Line Operators</div>
+                        </div>
+                        <div class="mySlides dashboard fade">
+                            <img src="assets/img/Dashboard2.PNG" style="display: block; margin-left: auto; margin-right: auto;">
+                            <div class="text">Fleet Monitoring Dashboard for Bus</div>
+                        </div>
+                        <div class="mySlides dashboard fade">
+                            <img src="assets/img/Dashboard3.PNG" style="display: block; margin-left: auto; margin-right: auto;">
+                            <div class="text">Process Control Dashboard Proof of concept for Manufacturing</div>
+                        </div>
                     </div>
                 </div>
-            </section>
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Projects</h2>
-				<!--
-                <div class="work__container bd-grid">
-                    <a href="" class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work2.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work3.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work4.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work5.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work6.jpg" alt="">
-                    </a>
+                <br>
+                <div style="text-align:center" class="dots dashboard-dots">
+                    <span class="dot dashboard-dot"></span> 
+                    <span class="dot dashboard-dot"></span> 
+                    <span class="dot dashboard-dot"></span> 
                 </div>
-				-->
-				<div class="about__container bd-grid">
-                    <div>
-                        <h2 class="about__subtitle">System Engineering Project</h2>
-                        <p class="about__text"> The objective of our project was to develop a system that transforms food preparation, emphasizing enhanced presentation, customization, and efficiency while addressing the diverse needs of stakeholders, including restaurants, caterers, and consumers.</p>
-						<br>
-						<p class="about__text"> Formal Systems Engineering Processes (ISO/IEC/IEEE 15288) was employed to design a prototype, meticulously factoring in the unique requirements of the healthcare sector, such as nutritional needs and food safety.
-						This resulted in a revolutionary system that not only exceeded expectations in food presentation and customization but also streamlined preparation processes.</p>
-						<br>
-						<p class = "about__text">Through this endeavor, It not only enhanced my problem-solving and project management capabilities but also acquired invaluable insights into the intricacies of healthcare systems engineering, strengthening my communication skills with diverse stakeholders. </p>
-					</div>   
-
-                    <div class="about__img ">
-                        <img src="assets/img/Hospital.jpg" alt="">
-                    </div>			
-                </div>
-            </section>
-
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
-
-                <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Contact" class="contact__button button">
-                    </form>
-                </div>
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Nicholas Lian</p>
-            <div class="footer__social">
-                <a href="https://www.linkedin.com/in/liannicholas/"target="_blank" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/2201124"target="_blank" class="footer__icon"><i  class='bx bxl-github'></i></a>
             </div>
-        </footer>
+        </section>
 
+        <section class="work section" id="work">
+            <h2 class="section-title">Projects</h2>
+            <div class="about__container bd-grid">
+                <div>
+                    <h2 class="about__subtitle">System Engineering Project</h2>
+                    <p class="about__text">The objective of our project was to develop a system that transforms food preparation, emphasizing enhanced presentation, customization, and efficiency while addressing the diverse needs of stakeholders, including restaurants, caterers, and consumers.</p>
+                    <br>
+                    <p class="about__text">Formal Systems Engineering Processes (ISO/IEC/IEEE 15288) was employed to design a prototype, meticulously factoring in the unique requirements of the healthcare sector, such as nutritional needs and food safety. This resulted in a revolutionary system that not only exceeded expectations in food presentation and customization but also streamlined preparation processes.</p>
+                    <br>
+                    <p class="about__text">Through this endeavor, It not only enhanced my problem-solving and project management capabilities but also acquired invaluable insights into the intricacies of healthcare systems engineering, strengthening my communication skills with diverse stakeholders.</p>
+                </div>
+                <div class="about__img">
+                    <img src="assets/img/Hospital.jpg" alt="">
+                </div>
+            </div>
+        </section>
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact__container bd-grid">
+                <form action="" class="contact__form">
+                    <input type="text" placeholder="Name" class="contact__input">
+                    <input type="mail" placeholder="Email" class="contact__input">
+                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                    <input type="button" value="Contact" class="contact__button button">
+                </form>
+            </div>
+        </section>
+    </main>
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
+    <footer class="footer">
+        <p class="footer__title">Nicholas Lian</p>
+        <div class="footer__social">
+            <a href="https://www.linkedin.com/in/liannicholas/" target="_blank" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/2201124" target="_blank" class="footer__icon"><i class='bx bxl-github'></i></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        let cadSlideIndex = 0;
+        let dashboardSlideIndex = 0;
+        showCadSlides();
+        showDashboardSlides();
+
+        function showCadSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides cad");
+            let dots = document.getElementsByClassName("cad-dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            cadSlideIndex++;
+            if (cadSlideIndex > slides.length) {cadSlideIndex = 1}
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[cadSlideIndex-1].style.display = "block";
+            dots[cadSlideIndex-1].className += " active";
+            setTimeout(showCadSlides, 5000); // Change image every 5 seconds
+        }
+
+        function showDashboardSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides dashboard");
+            let dots = document.getElementsByClassName("dashboard-dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            dashboardSlideIndex++;
+            if (dashboardSlideIndex > slides.length) {dashboardSlideIndex = 1}
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[dashboardSlideIndex-1].style.display = "block";
+            dots[dashboardSlideIndex-1].className += " active";
+            setTimeout(showDashboardSlides, 5000); // Change image every 5 seconds
+        }
+    </script>
+</body>
 </html>
-
-<script>
-    let slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}    
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
-        setTimeout(showSlides, 5000); // Change image every 2 seconds
-        }
-</script>
