@@ -464,6 +464,20 @@ img {
   .skill__images img {
     width: 500px;
   }
+  .about__img_skill1 img {
+  width: 500px;
+  border-radius: 0.5rem;
+}
+
+.about__img_sep2 img {
+  width: 200px;
+  border-radius: 0.5rem;
+}
+
+.about__img_300px img {
+  width: 300px;
+  border-radius: 0.5rem;
+}
   .skills__container {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
@@ -500,6 +514,7 @@ img {
 
 .slideshow-container {
   position: relative;
+  width: 80%;
   margin: auto;
 }
 
