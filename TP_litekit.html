@@ -30,12 +30,17 @@
             <div>
                 <h2 class="section-title">What is it about?</h2>
                 <p class="skills__text">
-                    In this project, the aim was to design and create a robotic system capable of tracking and following an object while maintaining a safe distance. This was achieved by combining three key components: the PixyCam, STM32 microcontroller, and Parallax Propeller Board. 
-                    <br><br>
-                    The PixyCam was configured to identify a specific color and signature associated with the target object. The STM32 microcontroller gathered information about the detected object's position through signature blocks and then transmits a simplified movement command to the Parallax Propeller Board. The Propeller Board translated it into appropriate signals (HIGH & LOW) for the motor drivers, enabling the system to effectively track and follow the object.
+                    In this project, the aim was to design and create a robotic system capable of tracking and following an object while maintaining a safe distance. This was achieved by combining three key components: the PixyCam, STM32 microcontroller, and Parallax Propeller Board.
+                    <br>
+                    <ul>
+                        <li><strong>Hardware Integration:</strong> Integrated a vision system (PixyCam 2) with the STM32, which has the color tracking algorithm, and with the Parallax Propeller Board, which focuses on processing the ultrasonic and ToF sensors.</li><br>
+                        <li><strong>Object Detection:</strong> Configured the PixyCam to identify a specific color and signature associated with the target object.</li><br>
+                        <li><strong>Movement Control:</strong> The STM32 microcontroller gathered information about the detected object's position through signature blocks and then transmitted a simplified movement command to the Parallax Propeller Board.</li><br>
+                        <li><strong>Signal Processing:</strong> The Propeller Board translated movement commands into appropriate signals (HIGH & LOW) for the motor drivers, enabling the system to effectively track and follow the object.</li><br>
+                    </ul>
                 </p>
             </div>
-            <div>
+            <div>            
                 <video width="100%" controls loop autoplay style="margin:0; outline: none; border: 0;">
                     <source src="assets/vid/litekit_colortracking.mp4" type="video/mp4">
                 </video>
