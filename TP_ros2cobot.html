@@ -11,7 +11,7 @@
     <header class="l-header">
         <nav class="nav bd-grid">
             <div>
-                <a href="#" class="nav__logo">Nicholas Lian</a>
+                <a href="index.html" class="nav__logo">Nicholas Lian</a>
             </div>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
@@ -48,81 +48,60 @@
         </div>
     </section>
 
-    <section class="section" id="highlights">
-        <h2 class="section-title">Competencies</h2>
-        <div class="skills__container bd-grid">
-            <div>
-                <h2 class="skills__subtitle">Project Management</h2>
-                <p class="skills__text", width="70%">
-                    <br>
-                    <li>Effectively engaged with stakeholders through regular updates and demonstrations, ensuring their feedback was integrated into the project. This maintained stakeholder trust and ensured the project met their expectations.</li><br>
-                    <li>Practiced resource management skills by optimizing the allocation of financial, human, and technical resources. This included managing the project budget effectively and ensuring the efficient use of team members’ time and expertise.</li><br>
-                </p>
-            </div>
-            <div>
-                <img style="max-width: 100%;" src="assets/img/P4_PM.gif" alt="">
-            </div>
+    
+    <section>
+        <h2 class="section-title">For More Technical Details about this project</h2>
+        <div class="button-container">
+            <a href="Technical_TP_ros2cobot.html" class="button">More Info</a>
         </div>
-    </section>
+    </section>    
 
-    <section class="skills section" id="skills">
-        <div class="skills__container bd-grid">
-            <div>
-                <h2 class="skills__subtitle">System Engineering</h2>
-                <p class="skills__text", width="70%">
-                    <br>
-                    <li>Worked closely with stakeholders to gather detailed requirements and understand their challenges and needs. This collaboration ensured that the problem analysis was accurate and comprehensive.</li><br>
-                    <li>Successfully defined and managed system requirements, ensuring clear documentation and traceability throughout the project life cycle.</li><br>
-                    <li>Developed prototypes and conducted rigorous testing to validate system functionality and performance.</li><br>
-                </p>
-            </div>
-            <div class="about__img_skill1">
-                <img src="assets/img/P4_SE1.png" alt="">
-            </div>
-        </div>
-    </section>
-
-    <section class="skills section" id="skills">
-        <div class="skills__container bd-grid">
-            <div>
-                <h2 class="skills__subtitle">Mechanical Design</h2>
-                <p class="skills__text", width="70%">
-                    <br>
-                    <li>Underwent the iterative design process while developing a box folding jig to meet the system needs of box folding.</li><br>
-                </p>
-            </div>
-            <div>
-                <img style="max-width: 50%;" src="assets/img/P4_MD.gif" alt="">
-            </div>
-        </div>
-    </section>
-
-    <section class="skills section" id="skills">
-        <div class="skills__container bd-grid">
-            <div>
-                <h2 class="skills__subtitle">ROS2 - Cobot Arm Programming</h2>
-                <p class="skills__text", width="70%">
-                    <br>
-                    <li>Successfully programmed a cohesive control system for the Cobot arm. Utilized ROS2's capabilities for inter-process communication and real-time data exchange to enhance system responsiveness and reliability.</li><br>
-                </p>
-            </div>
-            <video width=90% controls loop autoplay style="margin:0; outline: none; border: 0;">
-                <source src="assets/vid/ros2_cobot.mp4" type="video/mp4">
-            </video>
-        </div>
-    </section>
 
     <section class="contact section" id="contact">
         <h2 class="section-title">Contact</h2>
         <div class="contact__container bd-grid">
-            <form action="" class="contact__form">
-                <input type="text" placeholder="Name" class="contact__input">
-                <input type="mail" placeholder="Email" class="contact__input">
-                <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                <input type="button" value="Contact" class="contact__button button">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact__form" id="contactForm">
+                <input type="hidden" name="access_key" value="4365c303-925c-402f-9b91-6079a075baee">
+                <input type="text" name="name" placeholder="Name" class="contact__input" required>
+                <input type="email" name="email" placeholder="Email" class="contact__input" required>
+                <textarea name="message" placeholder="Your Message" cols="0" rows="10" class="contact__input" required></textarea>
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">            
+                <button type="submit" class="contact__button button">Contact</button>
             </form>
         </div>
     </section>
+    <script>
+      document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+    
+        var formData = new FormData(this);
+        
+        fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          body: formData
+        })
+        .then(response => response.json())
+        .then(result => {
+          if (result.success) {
+            alert('Form submitted successfully!');
+          } else {
+            alert('There was a problem submitting the form.');
+          }
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          alert('There was a problem submitting the form.');
+        });
+      });
+    </script>
+
+<section>
+    <h2 class="section-title">For More Technical Details about this project</h2>
+    <div class="button-container">
+        <a href="#" class="button">More Info</a>
+    </div>
+</section>    
+
 
     <footer class="footer">
         <p class="footer__title">Nicholas Lian</p>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <title>Robotic Object Tracking</title>
+</head>
+<body>
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="index.html" class="nav__logo">Nicholas Lian</a>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link active-link">Home</a></li>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <section class="section" id="highlights">
+        <h2 class="section-title">Lite Kit - Technical Aspect</h2>
+        <div class="skills__container bd-grid">
+            <div>
+                <h2 class="skills__subtitle">Iterative Development Approach</h2>
+                <p class="skills__text" width="70%">
+                    <br>In this project, the iterative development approach was critical for refining the system's functionality. This method involved repeated cycles of testing, analysis, and improvement, ensuring the robotic system could effectively track and follow the target object.
+                    <br>
+                    <br>The first phase focused on sensor testing to ensure accurate detection. This involved validating the PixyCam's ability to identify the specific color and signature under various conditions.
+                    <br>
+                    <br>In the second phase, the Lite kit was tested for movement towards a box upon detecting the target color. This ensured the system could respond correctly to the detection data provided by the PixyCam.
+                    <br>
+                    <br>The final phase involved full-scale color tracking, where the robot demonstrated its capability to follow the target object dynamically. This phase showcased the integration of the PixyCam, STM32 microcontroller, and Parallax Propeller Board working together seamlessly.
+                </p>
+            </div>
+            <div style="text-align: center;">
+                <img max-width: 50%; src="assets/img/litekit_pixy.png" alt="">
+                <sub style="text-align: center;">Phase 1: Training PixyCam</sub>
+            </div>
+            
+            <div style="text-align: center;">
+                <video width="100%" controls loop autoplay style="margin: 0; outline: none; border: 0;">
+                    <source src="assets/vid/litekit_tracking.mp4" type="video/mp4">
+                </video>
+                <sub style="text-align: center;">Phase 2: AGV Movement Towards Box</sub>
+            </div>
+            <div style="text-align: center;">
+                <video width="100%" controls loop autoplay style="margin: 0; outline: none; border: 0;">
+                    <source src="assets/vid/litekit_colortracking.mp4" type="video/mp4">
+                </video>
+                <sub style="text-align: center;">Phase 3: Full-Scale Color Tracking</sub>
+            </div>
+         </div>
+<br>
+<br>
+    <div class="skills__container bd-grid">
+        <div>
+            <h2 class="skills__subtitle">Hardware Communication Protocols</h2>
+            <p class="skills__text" width="70%">
+                <br>In this project, understanding and implementing hardware communication protocols were critical for ensuring reliable data transmission and system functionality. A key aspect was learning about checksums, which play a crucial role in maintaining data integrity during transmission.
+                <br>
+                <br>The first phase involved developing a method to transmit PixyCam2 data to the STM32 board. This required creating a robust color tracking algorithm capable of processing data to determine the color's position and distance. Ensuring accurate and error-free data transmission was achieved by implementing checksums to verify the integrity of the transmitted data.
+                <br>
+                <br>The second phase focused on integrating the PixyCam2 with the STM32 and transmitting the processed data to the Parallax Propeller Board using the USART communication protocol. This involved developing a tracking algorithm on the STM32, which used the color position data to determine the direction and distance for movement.
+                <br>
+                <br>Finally, the Parallax Propeller Board used the data received via USART to control the movement direction based on the STM32's algorithm. This integration showcased the seamless communication between the PixyCam2, STM32 microcontroller, and Parallax Propeller Board, demonstrating effective hardware communication protocols and the importance of data integrity checks.
+            </p>
+        </div>
+        <div style="text-align: center;">
+            <img max-width: 50%; max-height:50%; src="assets/img/litekit_algo.png" alt="">
+            <sub style="text-align: center;">PixyCam Data Processing Algorithm</sub>
+        </div>
+    </div>
+
+    </section>
+
+    <section class="contact section" id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact__container bd-grid">
+            <form action="" class="contact__form">
+                <input type="text" placeholder="Name" class="contact__input">
+                <input type="mail" placeholder="Email" class="contact__input">
+                <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                <input type="button" value="Contact" class="contact__button button">
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer__title">Nicholas Lian</p>
+        <div class="footer__social">
+            <a href="https://www.linkedin.com/in/liannicholas/" target="_blank" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/2201124" target="_blank" class="footer__icon"><i class='bx bxl-github'></i></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <title>Autonomous Guided Robot Project</title>
+</head>
+<body>
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="index.html" class="nav__logo">Nicholas Lian</a>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link active-link">Home</a></li>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <section class="section" id="project">
+        <h2 class="section-title">Autonomous Guided Robot Project</h2>
+        <div class="skills__container bd-grid">
+            <div>
+                <h2 class="section-title">What is it about?</h2>
+                <p class="skills__text">
+                    The Autonomous Guided Robot project aims to create a robot that can navigate a factory floor autonomously, following a path marked by a black line. The robot can also be controlled remotely via a web interface. This project involved several key steps:
+                    <br><br>
+                    <ul>
+                        <li><strong>UART Communication:</strong> Implemented a dual UART messaging system for smooth data transmission.</li><br>
+                        <li><strong>WebSocket Server:</strong> Set up a WebSocket server using an ESP-01S WiFi module for remote control.</li><br>
+                        <li><strong>Line Tracking Algorithm:</strong> Developed using PixyCam2 to detect and follow lines.</li><br>
+
+                    </ul>
+                </p>
+            </div>
+            <div>
+                <img src="assets/img/ES_Robot.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section" id="highlights">
+        <h2 class="section-title">Competencies</h2>
+        <div class="skills__container bd-grid">
+            <div>
+                <h2 class="skills__subtitle">UART Communication on STM32</h2>
+                <p class="skills__text", width = 70%>
+                    <br>
+                    <li>Gained a deep understanding of UART communication principles, including baud rate configuration, data framing, and error handling.</li><br>
+                    <li>Developed proficiency in configuring and utilizing the STM32 microcontroller's UART peripherals, including register-level programming and interrupt handling.</li><br>
+                    <li>Acquired skills in efficient buffer management, critical for maintaining data integrity and optimizing memory usage.</li><br>
+                    <li>Embraced an iterative approach to software development, recognizing the importance of continuous improvement and refinement to achieve high-performance and reliable communication systems.</li><br>
+                </div>
+                <div class="about__img_skill2">
+                    <img max-width: 60%; src="assets/img/ES_STM32.png" alt="">
+                </div>
+        </div>
+    </section>
+
+    <section class="skills section" id="skills">
+        <div class="skills__container bd-grid">
+        <div>
+            <h2 class="skills__subtitle">ESP-01S Webserver Integration</h2>
+            <p class="skills__text", width = 70%>
+                <br>
+                <li>Develop the ability to configure the ESP-01S to run a webserver, manage HTTP requests, and return web pages autonomously.</li><br>
+                <li>Enhance skills in programming the MCU to handle webserver configurations</li><br>
+                <li>Demonstrate the capability to control external devices, such as LEDs, through web commands, showcasing the integration of webserver functionality with physical hardware.</li><br>
+            </div>
+            <div class="about__img_skill1">
+                <img src="assets/img/ES_WEBSERVER.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="skills section" id="skills">
+        <div class="skills__container bd-grid">
+        <div>
+            <h2 class="skills__subtitle">PixyCam2 Line Tracking</h2>
+            <p class="skills__text", width = 70%>
+                <li>Learn to integrate the Pixy2 camera with the mobile platform for visual line detection and navigation</li><br>
+                <li>Develop skills in creating and programming a line tracking algorithm to interpret visual data from the Pixy2 camera and control the platform's movements accordingly.</li><br>
+                <li>Incorporate barcode recognition to decode digital markers at intersections, dynamically adjusting the robot's path based on detected markers.</li><br>
+                <li>This enhances the robot's autonomous navigation capabilities in complex environments.</li><br>
+            </div>
+        <div class="about__img_skill1">
+            <img src="assets/img/ES_LINETRACKING.png" alt="">
+        </div>
+    </div>
+    </section>
+
+    <section class="contact section" id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact__container bd-grid">
+            <form action="" class="contact__form">
+                <input type="text" placeholder="Name" class="contact__input">
+                <input type="mail" placeholder="Email" class="contact__input">
+                <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                <input type="button" value="Contact" class="contact__button button">
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer__title">Nicholas Lian</p>
+        <div class="footer__social">
+            <a href="https://www.linkedin.com/in/liannicholas/" target="_blank" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/2201124" target="_blank" class="footer__icon"><i class='bx bxl-github'></i></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <title>PrintPen Automation</title>
+</head>
+<body>
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="index.html" class="nav__logo">Nicholas Lian</a>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link active-link">Home</a></li>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <section class="section" id="project">
+        <h2 class="section-title">PrintPen Automation - Technical Aspect</h2>
+        <div class="skills__container bd-grid">
+            <div>
+                <h2 class="section-title">Why healthcare domain?</h2>
+                <p class="skills__text">
+                    Given the task of developing an innovation for the <strong>2D food printing pen</strong>, a thorough business analysis was conducted to identify suitable domains for its functionality.
+                    <br><br>
+                    Initially, we focused on the general <strong>food preparation domain</strong>, researching current processes, identifying inefficiencies, and exploring automation opportunities to enhance productivity and accuracy.
+                    <br><br>
+                    Through this domain analysis, we identified the <strong>healthcare food preparation sector</strong> as particularly promising, noting that hospitals currently use <strong>physical food order chits</strong>. This insight highlighted significant potential for <strong>automation</strong>.
+                    <br><br>
+                </p>
+            </div>
+            <div class="about__img_skill1">
+                <img style="max-width: 50%;" src="assets/img/sep2_order.png">
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="skills section" id="skills">
+        <div class="skills__container bd-grid">
+            <div>
+                <h2 class="section-title">PrintPen Automation</h2>
+                <p class="skills__text">
+                    Building on the insights gained from our domain analysis, we focused on developing an innovative solution using the <strong>Evebot Food Print Pen</strong> to address the specific needs of hospital food preparation kitchens.
+                    <br><br>
+                    Our goal was to replace the outdated and inefficient <strong>hard copy order chits</strong> with a digital solution by integrating an <strong>automatic print pen conveyor system</strong>.
+                    <br><br>
+                    This system prints <strong>dietary information</strong> directly onto serving trays using <strong>food-safe ink</strong>, effectively reducing the carbon footprint and digitizing existing processes.
+                    <br><br>
+                    By printing dietary information, including <strong>restrictions and allergens</strong>, directly on the tray, we make it easier and faster for staff to interpret and act upon.
+                    <br><br>
+                    Using <strong>icons and images</strong> to highlight dietary restrictions provides a clear and quick way to identify meal requirements. Automating this process not only improves <strong>efficiency</strong> by reducing the time needed for meal preparation but also minimizes <strong>errors</strong>.
+                </p>
+            </div>
+            
+            <div>
+                <video width="90%" controls loop autoplay style="margin:0; outline: none; border: 0;">
+                    <source src="assets/vid/sep2_demo.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <section class="skills section" id="challenges">
+        <div class="skills__container bd-grid">
+            <div>
+                <h2 class="section-title">Challenges in Development</h2>
+                <p class="skills__text">
+                    During the development of our PrintPen automation solution, we encountered several significant challenges that required innovative problem-solving. One of the primary obstacles was the <strong>unavailability of an API</strong> for the Evebot Food Print Pen. This lack of API support meant that we could not directly interface with the pen’s functionality in a straightforward manner, complicating our efforts to integrate it into a digital automation system.
+                    <br><br>
+                    Additionally, attempts to <strong>reverse engineer the Evebot pen’s Wi-Fi functionality</strong> proved unsuccessful. Without the ability to harness the pen’s built-in wireless capabilities, we had to explore alternative methods to achieve our goal of seamless communication between the pen and our automation system.
+                    <br><br>
+                    To overcome these hurdles, we developed a workaround using <strong>Android Debug Bridge (adb)</strong>. By leveraging adb, we managed to create a communication bridge that enabled us to control the pen indirectly. This solution allowed us to bypass the limitations posed by the absence of an API and the challenges in reverse engineering the Wi-Fi functionality. Despite these challenges, our innovative approach ensured the successful implementation of the PrintPen automation system, enabling us to meet our project's objectives.
+                </p>
+            </div>
+    
+            <div>
+                <video width="90%" controls loop autoplay style="margin:0; outline: none; border: 0;">
+                    <source src="assets/vid/sep2_adb.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section>
+    
+    
+<section class="skills section" id="learning-points">
+    <div class="skills__container bd-grid">
+        <div>
+            <h2 class="section-title">Learning Points</h2>
+            <p class="skills__text">
+                Throughout the development of our PrintPen automation solution, several key learning points emerged:
+                <br><br>
+                <strong>Adaptability in Problem-Solving:</strong> The unavailability of an API for the Evebot Food Print Pen highlighted the importance of being adaptable. We learned to think creatively and explore alternative methods when direct solutions are not available.
+                <br><br>
+                <strong>Technical Resourcefulness:</strong> Attempts to reverse engineer the Evebot pen’s Wi-Fi functionality taught us the value of technical resourcefulness. When traditional methods failed, we turned to the Android Debug Bridge (adb) to create an effective workaround, demonstrating the need for broad technical knowledge and the ability to leverage various tools.
+                <br><br>
+                <strong>Innovation in Integration:</strong> Developing a communication bridge using adb allowed us to successfully integrate the PrintPen into our automation system. This experience reinforced the importance of innovation in overcoming integration challenges and ensuring system functionality.
+                <br><br>
+                <strong>Importance of Thorough Research:</strong> Our initial domain analysis and research into the healthcare food preparation sector proved crucial. It underscored the need for thorough research to identify viable opportunities and understand the specific requirements of the target domain.
+                <br><br>
+                <strong>Environmental and Efficiency Benefits:</strong> Implementing the PrintPen solution provided insights into the environmental and efficiency benefits of digital automation. We learned that using food-safe ink and eliminating paper order chits not only reduces the carbon footprint but also improves operational efficiency and accuracy.
+                <br><br>
+                Overall, the challenges we faced and the solutions we developed underscored the importance of adaptability, technical resourcefulness, innovation, thorough research, and the pursuit of environmental and efficiency improvements in technology projects.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+
+    <section class="contact section" id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact__container bd-grid">
+            <form action="" class="contact__form">
+                <input type="text" placeholder="Name" class="contact__input">
+                <input type="mail" placeholder="Email" class="contact__input">
+                <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                <input type="button" value="Contact" class="contact__button button">
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer__title">Nicholas Lian</p>
+        <div class="footer__social">
+            <a href="https://www.linkedin.com/in/liannicholas/" target="_blank" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/2201124" target="_blank" class="footer__icon"><i class='bx bxl-github'></i></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/main.js"></script>
+</body>

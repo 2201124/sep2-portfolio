@@ -11,7 +11,7 @@
     <header class="l-header">
         <nav class="nav bd-grid">
             <div>
-                <a href="#" class="nav__logo">Nicholas Lian</a>
+                <a href="index.html" class="nav__logo">Nicholas Lian</a>
             </div>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
@@ -46,68 +46,50 @@
         </div>
     </section>
 
-
-    <section class="section" id="highlights">
-        <h2 class="section-title">Competencies</h2>
-        <div class="skills__container bd-grid">
-            <div>
-                <h2 class="skills__subtitle">UART Communication on STM32</h2>
-                <p class="skills__text", width = 70%>
-                    <br>
-                    <li>Gained a deep understanding of UART communication principles, including baud rate configuration, data framing, and error handling.</li><br>
-                    <li>Developed proficiency in configuring and utilizing the STM32 microcontroller's UART peripherals, including register-level programming and interrupt handling.</li><br>
-                    <li>Acquired skills in efficient buffer management, critical for maintaining data integrity and optimizing memory usage.</li><br>
-                    <li>Embraced an iterative approach to software development, recognizing the importance of continuous improvement and refinement to achieve high-performance and reliable communication systems.</li><br>
-                </div>
-                <div class="about__img_skill2">
-                    <img max-width: 60%; src="assets/img/ES_STM32.png" alt="">
-                </div>
+    <section>
+        <h2 class="section-title">For More Technical Details about this project</h2>
+        <div class="button-container">
+            <a href="Technical_TP_stm32ESrobot.html" class="button">More Info</a>
         </div>
-    </section>
-
-    <section class="skills section" id="skills">
-        <div class="skills__container bd-grid">
-        <div>
-            <h2 class="skills__subtitle">ESP-01S Webserver Integration</h2>
-            <p class="skills__text", width = 70%>
-                <br>
-                <li>Develop the ability to configure the ESP-01S to run a webserver, manage HTTP requests, and return web pages autonomously.</li><br>
-                <li>Enhance skills in programming the MCU to handle webserver configurations</li><br>
-                <li>Demonstrate the capability to control external devices, such as LEDs, through web commands, showcasing the integration of webserver functionality with physical hardware.</li><br>
-            </div>
-            <div class="about__img_skill1">
-                <img src="assets/img/ES_WEBSERVER.png" alt="">
-            </div>
-        </div>
-    </section>
-
-    <section class="skills section" id="skills">
-        <div class="skills__container bd-grid">
-        <div>
-            <h2 class="skills__subtitle">PixyCam2 Line Tracking</h2>
-            <p class="skills__text", width = 70%>
-                <li>Learn to integrate the Pixy2 camera with the mobile platform for visual line detection and navigation</li><br>
-                <li>Develop skills in creating and programming a line tracking algorithm to interpret visual data from the Pixy2 camera and control the platform's movements accordingly.</li><br>
-                <li>Incorporate barcode recognition to decode digital markers at intersections, dynamically adjusting the robot's path based on detected markers.</li><br>
-                <li>This enhances the robot's autonomous navigation capabilities in complex environments.</li><br>
-            </div>
-        <div class="about__img_skill1">
-            <img src="assets/img/ES_LINETRACKING.png" alt="">
-        </div>
-    </div>
-    </section>
+    </section>    
 
     <section class="contact section" id="contact">
         <h2 class="section-title">Contact</h2>
         <div class="contact__container bd-grid">
-            <form action="" class="contact__form">
-                <input type="text" placeholder="Name" class="contact__input">
-                <input type="mail" placeholder="Email" class="contact__input">
-                <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                <input type="button" value="Contact" class="contact__button button">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact__form" id="contactForm">
+                <input type="hidden" name="access_key" value="4365c303-925c-402f-9b91-6079a075baee">
+                <input type="text" name="name" placeholder="Name" class="contact__input" required>
+                <input type="email" name="email" placeholder="Email" class="contact__input" required>
+                <textarea name="message" placeholder="Your Message" cols="0" rows="10" class="contact__input" required></textarea>
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">            
+                <button type="submit" class="contact__button button">Contact</button>
             </form>
         </div>
     </section>
+    <script>
+      document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+    
+        var formData = new FormData(this);
+        
+        fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          body: formData
+        })
+        .then(response => response.json())
+        .then(result => {
+          if (result.success) {
+            alert('Form submitted successfully!');
+          } else {
+            alert('There was a problem submitting the form.');
+          }
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          alert('There was a problem submitting the form.');
+        });
+      });
+    </script>
 
     <footer class="footer">
         <p class="footer__title">Nicholas Lian</p>

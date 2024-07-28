@@ -788,3 +788,25 @@ body.is-touch .tiles article .content {
     }
 
 }
+.skills-section {
+  text-align: left;
+}
+
+.skills-list {
+  list-style-type: none; /* Remove bullet points if desired */
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list li {
+  text-align: left; /* Ensure each list item aligns to the left */
+  padding: 5px 0; /* Optional: Add some padding for better readability */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit; /* or a specific height value */
+}
+

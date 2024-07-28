@@ -11,7 +11,7 @@
     <header class="l-header">
         <nav class="nav bd-grid">
             <div>
-                <a href="#" class="nav__logo">Nicholas Lian</a>
+                <a href="index.html" class="nav__logo">Nicholas Lian</a>
             </div>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
@@ -48,53 +48,54 @@
         </div>
     </section>
 
-    <section class="section" id="highlights">
-        <h2 class="section-title">Competencies</h2>
-        <div class="skills__container bd-grid">
-            <div>
-                <h2 class="skills__subtitle">Iterative Development Approach</h2>
-                <p class="skills__text" width="70%">
-                    <br>In this project, the iterative development approach was critical for refining the system's functionality. This method involved repeated cycles of testing, analysis, and improvement, ensuring the robotic system could effectively track and follow the target object.
-                    <br>
-                    <br>The first phase focused on sensor testing to ensure accurate detection. This involved validating the PixyCam's ability to identify the specific color and signature under various conditions.
-                    <br>
-                    <br>In the second phase, the Lite kit was tested for movement towards a box upon detecting the target color. This ensured the system could respond correctly to the detection data provided by the PixyCam.
-                    <br>
-                    <br>The final phase involved full-scale color tracking, where the robot demonstrated its capability to follow the target object dynamically. This phase showcased the integration of the PixyCam, STM32 microcontroller, and Parallax Propeller Board working together seamlessly.
-                </p>
-            </div>
-            <div style="text-align: center;">
-                <img max-width: 50%; src="assets/img/litekit_pixy.png" alt="">
-                <sub style="text-align: center;">Phase 1: Training PixyCam</sub>
-            </div>
-            
-            <div style="text-align: center;">
-                <video width="100%" controls loop autoplay style="margin: 0; outline: none; border: 0;">
-                    <source src="assets/vid/litekit_tracking.mp4" type="video/mp4">
-                </video>
-                <sub style="text-align: center;">Phase 2: AGV Movement Towards Box</sub>
-            </div>
-            <div style="text-align: center;">
-                <video width="100%" controls loop autoplay style="margin: 0; outline: none; border: 0;">
-                    <source src="assets/vid/litekit_colortracking.mp4" type="video/mp4">
-                </video>
-                <sub style="text-align: center;">Phase 3: Full-Scale Color Tracking</sub>
-            </div>
-            
-    </section>
+
+    <section>
+        <h2 class="section-title">For More Technical Details about this project</h2>
+        <div class="button-container">
+            <a href="Technical_TP_litekit.html" class="button">More Info</a>
+        </div>
+    </section>    
+
+
+
 
     <section class="contact section" id="contact">
         <h2 class="section-title">Contact</h2>
         <div class="contact__container bd-grid">
-            <form action="" class="contact__form">
-                <input type="text" placeholder="Name" class="contact__input">
-                <input type="mail" placeholder="Email" class="contact__input">
-                <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                <input type="button" value="Contact" class="contact__button button">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact__form" id="contactForm">
+                <input type="hidden" name="access_key" value="4365c303-925c-402f-9b91-6079a075baee">
+                <input type="text" name="name" placeholder="Name" class="contact__input" required>
+                <input type="email" name="email" placeholder="Email" class="contact__input" required>
+                <textarea name="message" placeholder="Your Message" cols="0" rows="10" class="contact__input" required></textarea>
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">            
+                <button type="submit" class="contact__button button">Contact</button>
             </form>
         </div>
     </section>
-
+    <script>
+      document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+    
+        var formData = new FormData(this);
+        
+        fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          body: formData
+        })
+        .then(response => response.json())
+        .then(result => {
+          if (result.success) {
+            alert('Form submitted successfully!');
+          } else {
+            alert('There was a problem submitting the form.');
+          }
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          alert('There was a problem submitting the form.');
+        });
+      });
+    </script>
     <footer class="footer">
         <p class="footer__title">Nicholas Lian</p>
         <div class="footer__social">

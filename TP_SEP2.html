@@ -11,7 +11,7 @@
     <header class="l-header">
         <nav class="nav bd-grid">
             <div>
-                <a href="#" class="nav__logo">Nicholas Lian</a>
+                <a href="index.html" class="nav__logo">Nicholas Lian</a>
             </div>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
@@ -25,7 +25,7 @@
     </header>
 
     <section class="section" id="project">
-        <h2 class="section-title">System Engineering Project 2</h2>
+        <h2 class="section-title">PrintPen Automation</h2>
         <div class="skills__container bd-grid">
             <div>
                 <h2 class="section-title">What is it about?</h2>
@@ -48,52 +48,51 @@
         </div>
     </section>
 
-    <section class="section" id="highlights">
-        <h2 class="section-title">Competencies</h2>
-        <div class="skills__container bd-grid">
-            <div>
-                <h2 class="skills__subtitle">System Engineering & Integration</h2>
-                <p class="skills__text">
-                    <br>
-                    <li>Gained experience in exploring problem spaces, needs and requirements of the healthcare food preparation domain</li><br>
-                    <li>Developed skills in system engineering principles, including requirements analysis, system design, and testing to ensure the final product is.</li><br>
-                </p>
-            </div>
-            <div class="about__img_skill2">
-                <img src="assets/img/sep2_img1.jpeg" alt="System Integration">
-            </div>
+    <section>
+        <h2 class="section-title">For More Technical Details about this project</h2>
+        <div class="button-container">
+            <a href="Technical_TP_SEP2.html" class="button">More Info</a>
         </div>
-    </section>
-
-    <section class="skills section" id="skills">
-        <div class="skills__container bd-grid">
-            <div>
-                <h2 class="skills__subtitle">Project Management</h2>
-                <p class="skills__text">
-                    <br>
-                    <li>Applied project management techniques to coordinate with team members, manage resources, and ensure timely delivery of project milestones.</li><br>
-                    <li>Utilized project management tools to track progress, identify risks, and implement mitigation strategies.</li><br>
-                    <li>Facilitated effective communication within the team, ensuring alignment on project goals and objectives.</li><br>
-                </p>
-            </div>
-            <div class="about__img_skill1">
-                <img style="max-width: 50%;" src="assets/img/sep2_img2.jpg" alt="Project Management">
-            </div>
-        </div>
-    </section>
+    </section>    
 
 
     <section class="contact section" id="contact">
         <h2 class="section-title">Contact</h2>
         <div class="contact__container bd-grid">
-            <form action="" class="contact__form">
-                <input type="text" placeholder="Name" class="contact__input">
-                <input type="mail" placeholder="Email" class="contact__input">
-                <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                <input type="button" value="Contact" class="contact__button button">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact__form" id="contactForm">
+                <input type="hidden" name="access_key" value="4365c303-925c-402f-9b91-6079a075baee">
+                <input type="text" name="name" placeholder="Name" class="contact__input" required>
+                <input type="email" name="email" placeholder="Email" class="contact__input" required>
+                <textarea name="message" placeholder="Your Message" cols="0" rows="10" class="contact__input" required></textarea>
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">            
+                <button type="submit" class="contact__button button">Contact</button>
             </form>
         </div>
     </section>
+    <script>
+      document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+    
+        var formData = new FormData(this);
+        
+        fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          body: formData
+        })
+        .then(response => response.json())
+        .then(result => {
+          if (result.success) {
+            alert('Form submitted successfully!');
+          } else {
+            alert('There was a problem submitting the form.');
+          }
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          alert('There was a problem submitting the form.');
+        });
+      });
+    </script>
 
     <footer class="footer">
         <p class="footer__title">Nicholas Lian</p>
@@ -106,4 +105,3 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="assets/js/main.js"></script>
 </body>
-</html>

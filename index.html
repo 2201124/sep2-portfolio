@@ -11,7 +11,7 @@
     <header class="l-header">
         <nav class="nav bd-grid">
             <div>
-                <a href="#" class="nav__logo">Nicholas Lian</a>
+                <a href="index.html" class="nav__logo">Nicholas Lian</a>
             </div>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
@@ -30,7 +30,7 @@
         <section class="home bd-grid" id="home">
             <div class="home__data">
                 <h1 class="home__title">Hello!<br>I am <span class="home__title-color">Nicholas Lian</span><br> Robotics Engineer</h1>
-                <a href="#" class="button">Contact</a>
+                <a href="#contact" class="button">Contact</a>
             </div>
             <div class="home__social">
                 <a href="https://www.linkedin.com/in/liannicholas/" target="_blank" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
@@ -58,20 +58,25 @@
                 </div>
                 <div>
                     <h2 class="about__text">Skills</h2>
-                    <p class="about__text"><li>ROS, ROS2</li></p>
-                    <p class="about__text"><li>C, C++, Python, Javascript, HTML</li></p>
-                    <p class="about__text"><li>Object-Oriented Programming</li></p>
-                    <p class="about__text"><li>Linux</li></p>
-                    <p class="about__text"><li>Dashboarding</li></p>
-                    <p class="about__text"><li>CAD Design</li></p>
+                    <ul class="skills-list">
+                        <li>• ROS, ROS2</li>
+                        <li>• C, C++, Python, Javascript, HTML</li>
+                        <li>• Object-Oriented Programming</li>
+                        <li>• Linux</li>
+                        <li>• Dashboarding</li>
+                        <li>• CAD Design</li>
+                    </ul>
                 </div>
-
             </div>
         </section>
 
             <section class="work section" id="work">
                 <h2 class="section-title">Projects</h2>
                 <div class="work__container bd-grid">
+                    <a href="TP_SEP2.html" class="work__img">
+                        <img src="assets/img/work5.jpg" alt="">
+                        <h2 style="text-align: center;">PrintPen Automation </h2>
+                    </a>
                     <a href="TP_Dashboards.html" class="work__img">
                         <img src="assets/img/work6.jpg" alt="">
                         <h2 style="text-align: center;">IIOT Dashboarding</h2>
@@ -92,26 +97,47 @@
                         <img src="assets/img/work4.png" alt="">
                         <h2 style="text-align: center;">STM32 Mobile Platform</h2>
                     </a>
-                    <a href="TP_SEP2.html" class="work__img">
-                        <img src="assets/img/work5.jpg" alt="">
-                        <h2 style="text-align: center;">PrintPen Automation </h2>
-                    </a>
-
                 </div>
             </section>
 			
         
-        <section class="contact section" id="contact">
-            <h2 class="section-title">Contact</h2>
-            <div class="contact__container bd-grid">
-                <form action="" class="contact__form">
-                    <input type="text" placeholder="Name" class="contact__input">
-                    <input type="mail" placeholder="Email" class="contact__input">
-                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                    <input type="button" value="Contact" class="contact__button button">
-                </form>
-            </div>
-        </section>
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact__container bd-grid">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact__form" id="contactForm">
+                        <input type="hidden" name="access_key" value="4365c303-925c-402f-9b91-6079a075baee">
+                        <input type="text" name="name" placeholder="Name" class="contact__input" required>
+                        <input type="email" name="email" placeholder="Email" class="contact__input" required>
+                        <textarea name="message" placeholder="Your Message" cols="0" rows="10" class="contact__input" required></textarea>
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">            
+                        <button type="submit" class="contact__button button">Contact</button>
+                    </form>
+                </div>
+            </section>
+            <script>
+              document.getElementById('contactForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent the default form submission
+            
+                var formData = new FormData(this);
+                
+                fetch('https://api.web3forms.com/submit', {
+                  method: 'POST',
+                  body: formData
+                })
+                .then(response => response.json())
+                .then(result => {
+                  if (result.success) {
+                    alert('Form submitted successfully!');
+                  } else {
+                    alert('There was a problem submitting the form.');
+                  }
+                })
+                .catch(error => {
+                  console.error('Error:', error);
+                  alert('There was a problem submitting the form.');
+                });
+              });
+            </script>
     </main>
 
     <footer class="footer">
@@ -126,4 +152,5 @@
     <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
